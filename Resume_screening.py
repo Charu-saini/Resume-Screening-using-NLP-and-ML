@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-import PyPDF2
+import pypdf2
 import re
 
 # ---------------------------
@@ -78,4 +78,5 @@ if uploaded_file is not None:
         # Suggestions Section
         st.subheader("💡 Recommendations")
         st.write(f"This resume seems best suited for **{pred_role}** under **{pred_category}** category. Consider highlighting more relevant keywords to improve ATS matching.")
+
 
